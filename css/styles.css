@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -22,7 +22,7 @@ button {
 .logo {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -130,8 +130,14 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
-
+.box-team {
+  background-color: #f4f4fd;
+}
+.main-portfolio {
+  background-color: #ffffff;
+}
 .footer-conteiner {
   background-color: #2e2f42;
   background-size: cover;

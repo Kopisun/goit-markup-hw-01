@@ -1,6 +1,7 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #2e2f42;
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #fff;
 }
 a {
   text-decoration: none;
@@ -17,20 +18,23 @@ button {
 }
 .nav-page {
 } */
+
 .logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4d5ae5;
 }
 .logo-style {
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 /* .nav-list {
 
@@ -43,6 +47,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .nav-items-links:hover {
   font-weight: 500;
@@ -51,7 +56,7 @@ button {
   letter-spacing: 0.02em;
   color: #404bbf;
 }
-.nav-items-links:active {
+.nav-items-links:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -64,8 +69,10 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-style: normal;
 }
-.nav-adr-info:hover {
+.nav-adr-info:hover,
+.nav-adr-info:focus {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -75,7 +82,6 @@ button {
 .main-title {
   background-color: #2e2f42;
   background-size: cover;
-  height: 600px;
 }
 .title {
   font-weight: 700;
@@ -87,25 +93,16 @@ button {
 }
 
 .btn {
-  display: flex;
-  align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
 }
-.btn:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+.btn:hover,
+.btn:focus {
   background-color: #404bbf;
 }
 
@@ -114,6 +111,7 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .main-description {
@@ -131,12 +129,12 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  color: #2e2f42;
 }
 
 .footer-conteiner {
   background-color: #2e2f42;
   background-size: cover;
-  height: 312px;
 }
 .footer-text {
   font-size: 16px;

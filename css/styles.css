@@ -93,6 +93,7 @@ button {
 }
 
 .btn {
+  font-family: 'Roboto', sans-serif;
   justify-content: flex-start;
   background-color: #4d5ae5;
   font-weight: 500;

@@ -149,7 +149,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 188px 0;
-  margin-bottom: 123px;
 }
 
 .title {
@@ -225,7 +224,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
+
   margin-bottom: 32 px;
 }
 
@@ -243,8 +242,11 @@ img {
 .footer-conteiner {
   background-color: #2e2f42;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+}
+.footer-conteiner a {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   font-size: 16px;
@@ -264,10 +266,6 @@ footer .logo-style {
   text-transform: uppercase;
   color: #f4f4fd;
 }
-footer .logo {
-  display: inline-block;
-  margin-bottom: 16px;
-}
 
 .list-portfolio {
   display: flex;
@@ -281,9 +279,7 @@ footer .logo {
 }
 .main-subtitle {
   text-align: center;
-  margin-left: auto;
   align-content: center;
-
   margin-bottom: 72px;
 }
 .container-portfolio {
@@ -301,11 +297,9 @@ footer .logo {
   padding-bottom: 72px;
 }
 
-.main-app {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
-  border-bottom: 1px solid #e7e9fc;
+.app-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }

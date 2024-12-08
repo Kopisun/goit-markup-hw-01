@@ -135,7 +135,6 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 120px auto;
 }
 .page-header .container {
   margin-bottom: 0;
@@ -244,6 +243,8 @@ img {
 .footer-conteiner {
   background-color: #2e2f42;
   background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-text {
   font-size: 16px;
@@ -264,8 +265,8 @@ footer .logo-style {
   color: #f4f4fd;
 }
 footer .logo {
-  display: flex;
-  padding-bottom: 16px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .list-portfolio {
@@ -298,11 +299,6 @@ footer .logo {
   align-content: center;
   padding: 0;
   padding-bottom: 72px;
-}
-
-.footer-conteiner .container {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .main-app {

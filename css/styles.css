@@ -135,6 +135,7 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 .page-header .container {
   margin-bottom: 0;
@@ -142,6 +143,7 @@ img {
 }
 .main-list {
   padding: 120px 0;
+  margin: 0 auto;
 }
 .main-title {
   background-color: #2e2f42;
@@ -213,7 +215,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  margin-top: 32px;
 }
 .main-title-dskr {
   align-items: center;
@@ -224,8 +225,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-
-  margin-bottom: 32 px;
 }
 
 .box-team {

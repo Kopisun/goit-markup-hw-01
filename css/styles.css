@@ -283,7 +283,7 @@ footer .logo {
   margin-left: auto;
   align-content: center;
 
-  padding-top: 72px;
+  margin-bottom: 72px;
 }
 .container-portfolio {
   display: flex;

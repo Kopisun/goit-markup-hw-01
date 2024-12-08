@@ -135,7 +135,7 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 120px 0;
+  margin: 120px auto;
 }
 .page-header .container {
   margin-bottom: 0;

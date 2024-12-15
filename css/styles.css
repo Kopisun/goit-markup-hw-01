@@ -133,8 +133,7 @@ img {
 
 .container {
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .page-header .container {
@@ -147,6 +146,15 @@ img {
 }
 .main-title {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -244,7 +252,6 @@ img {
   padding: 100px 0;
 }
 .footer-conteiner a {
-  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-text {
@@ -254,8 +261,14 @@ img {
   color: #f4f4fd;
   width: 264px;
   height: 72px;
+  margin-top: 16px;
 }
-
+.footer-conteiner .container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 120px;
+  justify-content: baseline;
+}
 footer .logo-style {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -302,4 +315,77 @@ footer .logo-style {
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-bottom: 8px;
+}
+
+.main-icon {
+  display: block;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.icon-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #ffffff;
+}
+
+.icon-style:hover {
+  background-color: #31d0aa;
+  transition: background-color 250ms ease-in-out;
+}
+.footer-conteiner .icon {
+}
+
+.main-app {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  transform: translateY(200%);
+  top: 0;
+  left: 0;
+  background-color: #4d5ae5;
+}
+.overlay p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding-top: 40px;
+  padding-bottom: 164px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.overlay-link:hover .overlay {
+  transform: translateY(0%);
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }

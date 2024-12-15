@@ -428,3 +428,12 @@ footer .logo-style {
 .footer-icon .icon-style:focus {
   background-color: #31d0aa;
 }
+
+.footer-list-icon {
+  width: 40px;
+  height: 40px;
+}
+.footer-list-icon .icon-style {
+  height: 100%;
+  width: 100%;
+}

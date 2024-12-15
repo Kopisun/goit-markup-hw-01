@@ -359,7 +359,7 @@ footer .logo-style {
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 40px
+  height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
   fill: #ffffff;
@@ -403,7 +403,7 @@ footer .logo-style {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-app:hover .overlay-text {
+.overlay-link:hover .overlay-text {
   transform: translateY(0%);
 }
 

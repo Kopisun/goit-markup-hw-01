@@ -63,7 +63,8 @@ img {
 }
 
 .nav-items-links {
-  padding: 24px 0;
+  position: relative;
+  padding: 0 0;
   margin-left: auto;
   font-weight: 500;
   font-size: 16px;
@@ -90,8 +91,8 @@ img {
   content: '';
   width: 100%;
   position: absolute;
-  left: -1px;
-  bottom: 0px;
+  left: 0px;
+  bottom: -1px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
@@ -170,6 +171,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 188px 0;
+  max-width: 1440px;
 }
 
 .title {
@@ -332,7 +334,9 @@ footer .logo-style {
 }
 
 .main-icon {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
@@ -347,6 +351,7 @@ footer .logo-style {
   gap: 24px;
   justify-content: center;
   margin-top: 8px;
+  transition: background-color 250ms ease-in-out;
 }
 
 .icon-style {
@@ -372,8 +377,6 @@ footer .logo-style {
 } */
 
 .main-app {
-  position: relative;
-  overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -382,25 +385,25 @@ footer .logo-style {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .overlay {
-  position: absolute;
-  transform: translateY(200%);
-  top: 0;
-  left: 0;
-  background-color: #4d5ae5;
+  position: relative;
+  overflow: hidden;
 }
-.overlay p {
-  font-weight: 400;
+.overlay-text {
+  position: absolute;
+  top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-top: 40px;
-  padding-bottom: 164px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-link:hover .overlay {
+.overlay-link:hover .overlay-text {
   transform: translateY(0%);
 }
 

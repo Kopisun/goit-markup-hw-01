@@ -283,8 +283,7 @@ img {
 .footer-conteiner .container {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 120px;
-  justify-content: baseline;
+  align-items: baseline;
 }
 footer .logo-style {
   font-family: 'Raleway', sans-serif;
@@ -363,7 +362,7 @@ footer .logo-style {
   border-radius: 50%;
   background-color: #4d5ae5;
   fill: #ffffff;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-style:focus,
@@ -414,4 +413,12 @@ footer .logo-style {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+}
+
+.footer-list {
+  padding-right: 120px;
+}
+
+.footer-icon .icon {
+  gap: 16px;
 }

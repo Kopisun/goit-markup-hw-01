@@ -82,6 +82,7 @@ img {
   position: relative;
   color: #404bbf;
 }
+
 .nav-items-links.current::after {
   content: '';
   width: 100%;

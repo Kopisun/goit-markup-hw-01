@@ -80,6 +80,7 @@ img {
 }
 .nav-items-links.current {
   position: relative;
+  color: #404bbf;
 }
 .nav-items-links.current::after {
   content: '';

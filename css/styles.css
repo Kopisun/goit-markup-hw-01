@@ -61,42 +61,51 @@ img {
   text-transform: uppercase;
   color: #2e2f42;
 }
-
-.nav-items-links {
-  position: relative;
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
   padding: 0 0;
-  margin-left: auto;
+  color: #404bbf;
+}
+.nav-items-links {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-items-links:hover {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #404bbf;
+.nav-items-links.current {
+  position: relative;
 }
-.nav-items-links:focus {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #404bbf;
-}
-.nav-items-links::after {
+.nav-items-links.current::after {
   content: '';
   width: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: -1px;
   height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
   background-color: #404bbf;
   border-radius: 2px;
 }
+.nav-items .nav-items-links:hover {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+}
+.nav-items .nav-items-links:active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+}
+
 .nav-adr-info {
   font-size: 16px;
   line-height: 1.5;
@@ -163,7 +172,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(/images/peopleoffice.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -207,14 +216,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  color: #404bbf;
-}
-.nav-items {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 0 0;
-  position: relative;
   color: #404bbf;
 }
 

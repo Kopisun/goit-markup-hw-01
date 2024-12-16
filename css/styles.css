@@ -172,7 +172,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(./peopleoffice.jpg);
+    url(/images/office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

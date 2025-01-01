@@ -69,7 +69,7 @@
       </section>
       <section class="main-list">
         <div class="container">
-          <h2 class="visual-hidden">Benefits</h2>
+          <h2 class="visually-hidden">Benefits</h2>
           <ul class="main-title-list">
             <li class="main-title-dskr">
               <div class="main-icon">
@@ -471,7 +471,7 @@
         <div class="">
           <p class="footer-title">Subscribe</p>
           <div>
-            <form name="subscribe" autocomplete="on" validate>
+            <form name="subscribe" autocomplete="on">
               <input
                 class="input-footer"
                 type="email"
@@ -492,73 +492,89 @@
 
     <div class="modal-overlay" data-modal>
       <div class="modal">
-        <div class="close">
-          <button class="close_btn" type="button" data-modal-close>
-            <svg class="close_icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <button class="close_btn" type="button" data-modal-close>
+          <svg class="close_icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-        <div class="form-input">
-          <label class="form-label">
-            Name
-            <div class="input">
-              <form name="feedback_form" autocomplete="on" validate>
-                <input class="connection-field" type="text" name="username" />
-              </form>
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-          </label>
-        </div>
-        <div class="form-input">
-          <label class="form-label">
-            Phone
-            <div class="input">
-              <form name="feedback_form" autocomplete="on" validate>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form name="feedback_form" autocomplete="on" validate>
+          <div class="form-input">
+            <label class="form-label" for="user_name">
+              Name
+              <div class="input">
+                <input class="connection-field" type="text" name="user-name" />
+
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+        </form>
+        <form name="feedback_form" autocomplete="on" validate>
+          <div class="form-input">
+            <label class="form-label" for="user-tel">
+              Phone
+              <div class="input">
+                <input class="connection-field" type="tel" name="user-tel" />
+
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+        </form>
+        <form name="feedback_form" autocomplete="on" validate>
+          <div class="form-input">
+            <label class="form-label" for="user-email"
+              >Email
+              <div class="input">
                 <input
                   class="connection-field"
-                  type="tel"
-                  name="usertel"
-                  required-placeholder=""
+                  type="email"
+                  name="user-email"
                 />
-              </form>
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
+
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="/images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+        </form>
+        <form name="feedback_form" autocomplete="on" validate>
+          <div class="form-input">
+            <label class="form-label" for="user-comment">
+              Comment
+              <div class="input">
+                <textarea
+                  class="comment-style"
+                  rows="5"
+                  name="user-comment"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+            </label>
+          </div>
+        </form>
+        <div class="chekbox">
+          <label class="form-label" for="user-privacy">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+            /><span class="icon-hidden"
+              ><svg class="" width="10" height="8">
+                <use href="./images/icons.svg#icon-Checkbox"></use></svg></span
+            >I accept the terms and conditions of the
+            <a href="#" class="policy">Privacy Policy</a>
           </label>
         </div>
-        <div class="form-input">
-          <label class="form-label"
-            >Email
-            <div class="input">
-              <form name="feedback_form" autocomplete="on" validate>
-                <input class="connection-field" type="email" name="useremail" />
-              </form>
-              <svg class="modal-icon" width="18" height="18">
-                <use href="/images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-          </label>
-        </div>
-        <div class="form-input">
-          <label class="form-label">
-            Comment
-            <div class="input">
-              <form name="feedback_form" autocomplete="on" validate></form>
-              <textarea
-                class="connection-field"
-                rows="5"
-                name="comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-          </label>
-        </div>
+
         <button class="btn" type="submit">Send</button>
       </div>
     </div>

@@ -151,6 +151,7 @@ input {
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
+  letter-spacing: 0.04em;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -599,7 +600,7 @@ footer .logo-style {
   margin-bottom: 24px;
 }
 
-.visually-hidden:checked + .form-label .icon-hidden {
+.chekbox-logo:checked + .form-label .icon-hidden {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -619,11 +620,6 @@ footer .logo-style {
   fill: transparent;
 }
 
-.input:checked {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
 .policy {
   color: #4d5ae5;
 }

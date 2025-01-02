@@ -548,6 +548,7 @@ footer .logo-style {
   border: 1px solid #4d5ae5;
   border-radius: 4px;
   fill: #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .connection-field {
@@ -562,10 +563,6 @@ footer .logo-style {
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.connection-field:focus + .modal-icon {
-  border-color: #4d5ae5;
-  fill: #4d5ae5;
 }
 .modal-icon {
   position: absolute;
@@ -621,9 +618,7 @@ footer .logo-style {
   justify-content: center;
   fill: transparent;
 }
-..input + .modal-icon:focus {
-  fill: #4d5ae5;
-}
+
 .input:checked {
   background-color: #404bbf;
   border: none;

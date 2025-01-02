@@ -424,7 +424,9 @@ footer .logo-style {
 .footer-list {
   margin-right: 120px;
 }
-
+.footer-icon {
+  margin-right: 80px;
+}
 .footer-icon .icon {
   gap: 16px;
 }
@@ -555,6 +557,7 @@ footer .logo-style {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -648,10 +651,24 @@ footer .logo-style {
   line-height: 2;
 }
 
-.footer-conteiner .btn {
-  border-radius: 4px;
-  padding: 8px 24px;
-  width: 165px;
+.btn-footer {
+  font-family: 'Roboto', sans-serif;
+  min-width: 165px;
   height: 40px;
-  margin-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500s;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+.icon-telegram {
+  margin-left: 16px;
+  fill: #fff;
 }

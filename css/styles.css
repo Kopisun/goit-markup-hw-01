@@ -597,6 +597,12 @@ footer .logo-style {
   margin-bottom: 24px;
 }
 
+.visually-hidden:checked + .form-label .icon-hidden {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
 .icon-hidden {
   width: 16px;
   height: 16px;

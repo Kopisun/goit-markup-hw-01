@@ -501,93 +501,87 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form name="feedback_form" autocomplete="on">
           <div class="form-input">
-            <label class="form-label" for="user-name">
-              Name
-              <div class="input">
-                <input
-                  class="connection-field"
-                  type="text"
-                  id="user-name"
-                  name="user-name"
-                />
-
-                <svg class="modal-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </label>
+            <label class="form-label" for="user-name"> Name</label>
+            <div class="input">
+              <input
+                class="connection-field"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
         </form>
         <form name="feedback_form" autocomplete="on">
           <div class="form-input">
-            <label class="form-label" for="user-tel">
-              Phone
-              <div class="input">
-                <input
-                  class="connection-field"
-                  type="tel"
-                  name="user-tel"
-                  id="user-tel"
-                />
+            <label class="form-label" for="user-tel"> Phone</label>
+            <div class="input">
+              <input
+                class="connection-field"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+              />
 
-                <svg class="modal-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </label>
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
         </form>
         <form name="feedback_form" autocomplete="on">
           <div class="form-input">
-            <label class="form-label" for="user-email"
-              >Email
-              <div class="input">
-                <input
-                  class="connection-field"
-                  type="email"
-                  name="user-email"
-                  id="user-email"
-                />
+            <label class="form-label" for="user-email">Email</label>
+            <div class="input">
+              <input
+                class="connection-field"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
 
-                <svg class="modal-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
-            </label>
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
         </form>
         <form name="feedback_form" autocomplete="on">
           <div class="form-input">
-            <label class="form-label" for="user-comment">
-              Comment
-              <div class="input">
-                <textarea
-                  class="comment-style"
-                  rows="5"
-                  name="user-comment"
-                  id="user-comment"
-                  placeholder="Text input"
-                ></textarea>
-              </div>
-            </label>
+            <label class="form-label" for="user-comment"> Comment</label>
+            <div class="input">
+              <textarea
+                class="comment-style"
+                rows="5"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
           </div>
         </form>
         <div class="chekbox">
+          <input
+            class="visually-hidden"
+            type="checkbox"
+            value="true"
+            name="user-privacy"
+            id="user-privacy"
+          />
           <label class="form-label" for="user-privacy">
-            <input
-              class="visually-hidden"
-              type="checkbox"
-              value="true"
-              name="user-privacy"
-            /><span class="icon-hidden"
-              ><svg class="" width="10" height="8">
-                <use href="./images/icons.svg#icon-Checkbox"></use></svg></span
+            <span class="icon-hidden">
+              <svg class="label-hidden" width="10" height="8">
+                <use href="./images/icons.svg#icon-Checkbox"></use>
+              </svg> </span
             >I accept the terms and conditions of the
             <a href="#" class="policy">Privacy Policy</a>
           </label>
         </div>
 
-        <button class="btn" type="submit">Send</button>
+        <button class="btn" type="button">Send</button>
       </div>
     </div>
     <script src="/js/modal.js"></script>

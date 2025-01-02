@@ -563,7 +563,7 @@ footer .logo-style {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.connection-field:focus {
+.connection-field:focus + .modal-icon {
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
@@ -671,6 +671,7 @@ footer .logo-style {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  letter-spacing: 0.04em;
 }
 .icon-telegram {
   margin-left: 16px;

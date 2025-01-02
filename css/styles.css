@@ -619,7 +619,9 @@ footer .logo-style {
   justify-content: center;
   fill: transparent;
 }
-
+..input + .modal-icon:focus {
+  fill: #4d5ae5;
+}
 .input:checked {
   background-color: #404bbf;
   border: none;

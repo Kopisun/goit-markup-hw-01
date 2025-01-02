@@ -544,13 +544,6 @@ footer .logo-style {
   width: 360px;
   margin: 0 auto;
 }
-.input:hover,
-.input:focus {
-  border: 1px solid #4d5ae5;
-  border-radius: 4px;
-  fill: #4d5ae5;
-  border-color: #4d5ae5;
-}
 
 .connection-field {
   display: block;

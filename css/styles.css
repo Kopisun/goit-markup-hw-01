@@ -498,7 +498,9 @@ footer .logo-style {
   margin-bottom: 8px;
   border-radius: 4px;
 }
-
+.form-input-comment {
+  margin-bottom: 16px;
+}
 .close_btn {
   position: absolute;
   border: none;

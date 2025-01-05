@@ -971,14 +971,14 @@ footer .logo-style {
 
 @media screen and (min-width: 768px) {
   .modal {
-    height: 584px;
+   
     padding: 72px 24px 24px 24px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .modal {
-    height: 584px;
+  
     padding: 72px 24px 24px 24px;
   }
 }

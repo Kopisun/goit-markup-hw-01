@@ -55,6 +55,80 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="close_icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-items">
+              <li class="">
+                <a class="mobile-nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="">
+                <a class="mobile-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="">
+                <a class="mobile-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="menu-nav-adr">
+              <li class="nav-items-contacts">
+                <a
+                  class="menu-adr-link"
+                  href="mailto:info@devstudio.com"
+                  id="contacts"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="nav-items-contacts">
+                <a class="menu-adr-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="icon">
+            <li>
+              <a href="#" class="icon-style">
+                <svg class="icon-style-list" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-style">
+                <svg class="icon-style-list" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-style">
+                <svg class="icon-style-list" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-style">
+                <svg class="icon-style-list" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -123,7 +197,7 @@
         </div>
       </section>
       <section class="box-team main-list">
-        <div class="container">
+        <div class="box-team-container container">
           <h2 class="main-subtitle">Our Team</h2>
           <ul class="list-portfolio">
             <li class="main-portfolio">
@@ -134,8 +208,8 @@
                 height="260"
               />
               <div class="portfolio-container">
-                <h3 class="main-title-info">Mark Guerrero</h3>
-                <p class="main-description">Product Designer</p>
+                <h3 class="main-title-name">Mark Guerrero</h3>
+                <p class="main-description-context">Product Designer</p>
 
                 <ul class="icon">
                   <li class="asdf">
@@ -177,8 +251,8 @@
                 height="260"
               />
               <div class="portfolio-container">
-                <h3 class="main-title-info">Tom Ford</h3>
-                <p class="main-description">Frontend Developer</p>
+                <h3 class="main-title-name">Tom Ford</h3>
+                <p class="main-description-context">Frontend Developer</p>
                 <ul class="icon">
                   <li>
                     <a href="#" class="icon-style">
@@ -219,8 +293,8 @@
                 height="260"
               />
               <div class="portfolio-container">
-                <h3 class="main-title-info">Camila Garcia</h3>
-                <p class="main-description">Marketing</p>
+                <h3 class="main-title-name">Camila Garcia</h3>
+                <p class="main-description-context">Marketing</p>
                 <ul class="icon">
                   <li>
                     <a href="#" class="icon-style">
@@ -261,8 +335,8 @@
                 height="260"
               />
               <div class="portfolio-container">
-                <h3 class="main-title-info">Daniel Wilson</h3>
-                <p class="main-description">UI Designer</p>
+                <h3 class="main-title-name">Daniel Wilson</h3>
+                <p class="main-description-context">UI Designer</p>
                 <ul class="icon">
                   <li>
                     <a href="#" class="icon-style">
@@ -317,8 +391,8 @@
                 </p>
               </div>
               <div class="app-container">
-                <h3 class="main-title-info">Banking App</h3>
-                <p class="main-description">App</p>
+                <h3 class="main-title-name">Banking App</h3>
+                <p class="main-description-context">App</p>
               </div>
             </li>
             <li class="main-app">
@@ -336,8 +410,8 @@
                 </p>
               </div>
               <div class="app-container">
-                <h3 class="main-title-info">Cashless Payment</h3>
-                <p class="main-description">Marketing</p>
+                <h3 class="main-title-name">Cashless Payment</h3>
+                <p class="main-description-context">Marketing</p>
               </div>
             </li>
 
@@ -356,8 +430,8 @@
                 </p>
               </div>
               <div class="app-container">
-                <h3 class="main-title-info">Meditation App</h3>
-                <p class="main-description">App</p>
+                <h3 class="main-title-name">Meditation App</h3>
+                <p class="main-description-context">App</p>
               </div>
             </li>
 
@@ -376,8 +450,8 @@
                 </p>
               </div>
               <div class="app-container">
-                <h3 class="main-title-info">Taxi Service</h3>
-                <p class="main-description">Marketing</p>
+                <h3 class="main-title-name">Taxi Service</h3>
+                <p class="main-description-context">Marketing</p>
               </div>
             </li>
 
@@ -396,8 +470,8 @@
                 </p>
               </div>
               <div class="app-container">
-                <h3 class="main-title-info">Screen Illustrations</h3>
-                <p class="main-description">Design</p>
+                <h3 class="main-title-name">Screen Illustrations</h3>
+                <p class="main-description-context">Design</p>
               </div>
             </li>
             <li class="main-app">
@@ -415,8 +489,8 @@
                 </p>
               </div>
               <div class="app-container">
-                <h3 class="main-title-info">Online Courses</h3>
-                <p class="main-description">Marketing</p>
+                <h3 class="main-title-name">Online Courses</h3>
+                <p class="main-description-context">Marketing</p>
               </div>
             </li>
           </ul>
@@ -424,7 +498,7 @@
       </section>
     </main>
 
-    <footer class="footer-conteiner">
+    <footer class="footer">
       <div class="container">
         <div class="footer-list">
           <a class="logo" href="./index.html"
@@ -472,7 +546,7 @@
           <p class="footer-title">Subscribe</p>
 
           <form class="subscribe" name="subscribe" autocomplete="on">
-            <label class="footer-email" for="user_email">
+            <label for="user_email">
               <input
                 class="input-footer"
                 type="email"
@@ -585,5 +659,6 @@
       </div>
     </div>
     <script src="/js/modal.js"></script>
+    <script src="/js/menu.js"></script>
   </body>
 </html>

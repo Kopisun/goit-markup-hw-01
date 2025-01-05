@@ -294,6 +294,9 @@ input {
   color: #4d5ae5;
 }
 
+.mobile-menu .icon {
+  gap: 40px;
+}
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -341,8 +344,8 @@ input {
   letter-spacing: 0.04em;
   color: #fff;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   gap: 10px;
   margin: 0 auto;
@@ -823,23 +826,15 @@ footer .logo-style {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   border-radius: 4px;
-
+  width: 288px;
+  height: 623px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 16px 24px 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-label {
-  display: block;
-  flex-direction: column;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  margin-bottom: 4px;
-}
+
 .form-input {
   display: block;
   margin-bottom: 8px;
@@ -887,12 +882,10 @@ footer .logo-style {
 
 .input {
   position: relative;
-  width: 360px;
+  width: 100%;
 }
 
 .connection-field {
-  display: block;
-
   width: 100%;
   height: 40px;
 
@@ -901,15 +894,15 @@ footer .logo-style {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .connection-field:hover,
-.connection-field:focus {
-  border-color: #4d5ae5;
-}
 .connection-field:focus + .modal-icon {
+  border-color: #4d5ae5;
   fill: #4d5ae5;
 }
+
 .modal-icon {
   position: absolute;
   top: 50%;
@@ -927,9 +920,8 @@ footer .logo-style {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+
   background-color: transparent;
   padding: 8px 16px;
   outline: transparent;
@@ -941,30 +933,52 @@ footer .logo-style {
   border-color: #4d5ae5;
 }
 
-.chekbox {
-  margin-bottom: 24px;
+.icon-hidden {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+}
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 .chekbox-logo:checked + .form-label .icon-hidden {
+  border: transparent;
   background-color: #404bbf;
-  border: none;
   fill: #f4f4fd;
 }
-
-.icon-hidden {
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
+.chekbox .form-label {
+  display: flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
+  margin-bottom: 24px;
 }
-
 .policy {
   color: #4d5ae5;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal {
+    height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
 }
